@@ -1,0 +1,11 @@
+project_id = "ceer-evaluacion-rapida-colombia-local"
+
+[auth]
+enable_signup = false
+site_url = "http://localhost:3000"
+additional_redirect_urls = ["http://127.0.0.1:3000"]
+
+[auth.email]
+# Keep email/password authentication available for administrator-provisioned
+# accounts. The global auth.enable_signup=false still blocks public signup.
+enable_signup = true

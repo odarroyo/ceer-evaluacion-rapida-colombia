@@ -1,0 +1,28 @@
+# Dependencies and build output
+node_modules/
+.next/
+coverage/
+*.tsbuildinfo
+*.log
+
+# Secrets and provider-local state
+.env*
+!.env.example
+.vercel/
+supabase/.temp/
+
+# Local artifacts and operational evidence
+outputs/
+backups/
+certificates/
+docs/evidence/
+*.pem
+*.key
+*.crt
+*.p12
+
+# Operating-system/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

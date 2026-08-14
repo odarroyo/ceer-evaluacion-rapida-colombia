@@ -1,0 +1,63 @@
+{
+  "name": "ceer-evaluacion-rapida-colombia",
+  "version": "1.0.0",
+  "description": "Aplicación institucionalmente neutral desarrollada originalmente por CEER para evaluaciones rápidas post-sismo.",
+  "author": "CEER",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/odarroyo/ceer-evaluacion-rapida-colombia.git"
+  },
+  "homepage": "https://github.com/odarroyo/ceer-evaluacion-rapida-colombia",
+  "license": "SEE LICENSE IN LICENSE",
+  "type": "module",
+  "private": true,
+  "engines": {
+    "node": ">=20.9"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "dev:lan": "node scripts/start-lan.mjs",
+    "dev:mobile:tunnel": "npx --yes wrangler@latest tunnel quick-start http://127.0.0.1:3000",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "publication:verify": "node scripts/verify-publication-boundary.mjs",
+    "staging:config:push": "supabase config push",
+    "staging:db:dry-run": "supabase db push --linked --include-seed --dry-run",
+    "staging:db:push": "supabase db push --linked --include-seed",
+    "staging:bootstrap": "node --env-file=.env.local scripts/bootstrap-super-admin.mjs",
+    "staging:verify:remote": "node --env-file=.env.local scripts/verify-staging-boundaries.mjs",
+    "staging:load": "node --env-file=.env.local scripts/run-staging-load.mjs",
+    "staging:load:audit": "node --env-file=.env.local scripts/audit-staging-load.mjs",
+    "staging:excel": "node --env-file=.env.local scripts/verify-staging-excel.mjs",
+    "photos:backup": "node --env-file=.env.local scripts/backup-photos.mjs",
+    "photos:restore": "node scripts/restore-photo-backup.mjs",
+    "photos:verify:staging": "node --env-file=.env.local scripts/verify-photo-backup.mjs",
+    "verify": "npm run publication:verify && npm run lint && npm run typecheck && npm run test && npm run build"
+  },
+  "dependencies": {
+    "@supabase/ssr": "latest",
+    "@supabase/supabase-js": "latest",
+    "exceljs": "4.4.0",
+    "next": "latest",
+    "react": "latest",
+    "react-dom": "latest",
+    "zod": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "eslint": "9.39.2",
+    "eslint-config-next": "latest",
+    "supabase": "2.114.0",
+    "typescript": "6.0.2",
+    "vitest": "latest"
+  },
+  "overrides": {
+    "uuid": "11.1.1"
+  }
+}

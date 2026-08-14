@@ -1,0 +1,22 @@
+name: Propuesta de mejora
+description: Proponga una mejora generalizable para el proyecto.
+title: "[Mejora]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema
+      description: Explique la necesidad sin incluir información institucional confidencial.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Propuesta
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riesgos de seguridad, privacidad u operación

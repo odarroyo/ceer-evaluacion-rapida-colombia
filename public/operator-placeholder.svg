@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 72" role="img" aria-labelledby="title desc">
+  <title id="title">Marca configurable del operador</title>
+  <desc id="desc">Marcador geométrico neutro para reemplazar por una marca autorizada.</desc>
+  <rect width="240" height="72" rx="12" fill="#edf7f7"/>
+  <path d="M24 51V21h30v30H24Zm8-8h14V29H32v14Z" fill="#0b3d4b"/>
+  <path d="m39 16 20 13v22h-8V33L39 25 27 33v18h-8V29l20-13Z" fill="#176b78"/>
+  <text x="72" y="34" fill="#0b3d4b" font-family="system-ui, sans-serif" font-size="15" font-weight="700">CEER</text>
+  <text x="72" y="51" fill="#64757a" font-family="system-ui, sans-serif" font-size="11">Operador configurable</text>
+</svg>

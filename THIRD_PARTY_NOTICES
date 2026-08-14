@@ -1,0 +1,39 @@
+THIRD-PARTY NOTICES
+
+Applied Technology Council (ATC)
+--------------------------------
+La metodología de priorización postsismo de este proyecto tiene como referencia
+conceptual los procedimientos ATC-20 del Applied Technology Council.
+
+Este repositorio no distribuye formularios, plantillas, publicaciones ni
+carteles ATC-20, y la interfaz CEER no pretende reproducir o sustituir el
+formulario oficial. Los términos PolyForm que cubren el software original de
+CEER no relicencian ningún material, nombre o marca de ATC.
+
+Los formularios oficiales y sus condiciones de uso deben consultarse
+directamente en:
+
+  https://www.atcouncil.org/atc-20
+
+No agregue al repositorio una reproducción, traducción o adaptación de material
+ATC sin revisar sus términos vigentes y conservar la autorización aplicable.
+El nombre de ATC solo debe utilizarse como referencia metodológica factual, no
+como nombre de producto, publicidad, respaldo o afiliación.
+
+Institutional names and marks
+-----------------------------
+No agency logo, seal, or agency-specific default identity is shipped in this
+repository. Deployment operators are responsible for obtaining authorization
+before configuring institutional branding. The CEER license grants no trademark
+or endorsement rights.
+
+DIVIPOLA data
+-------------
+The seed contains Colombian administrative-location data identified as DIVIPOLA.
+That government data is not original CEER software. Reusers must verify and
+comply with the authoritative source's current terms and update requirements.
+
+Software dependencies
+---------------------
+Third-party packages retain their own licenses. Exact resolved packages and
+license metadata are recorded in package-lock.json and installed by `npm ci`.

@@ -1,0 +1,36 @@
+name: Informe de defecto
+description: Reporte un comportamiento reproducible sin incluir datos de campo ni credenciales.
+title: "[Defecto]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: No incluya nombres, contactos, coordenadas, fotografías, credenciales ni registros reales.
+  - type: textarea
+    id: description
+    attributes:
+      label: Descripción
+      description: Indique qué ocurrió y qué esperaba.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Pasos con datos sintéticos
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión o commit
+  - type: input
+    id: device
+    attributes:
+      label: Dispositivo y navegador
+  - type: checkboxes
+    id: privacy
+    attributes:
+      label: Privacidad
+      options:
+        - label: Confirmo que este informe no contiene datos reales, secretos ni evidencia operativa sensible.
+          required: true
