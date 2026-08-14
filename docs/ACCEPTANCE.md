@@ -47,4 +47,4 @@ Reviewed commit:
 
 Environment and URL:
 
-Approvers and date (stored in the approved operational record):
+Responsible maintainer and date (stored in the approved operational record):
